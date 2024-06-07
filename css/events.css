@@ -1,0 +1,88 @@
+.wrapper {
+    overflow: visible;
+    margin: 0px 150px;
+}
+
+.hotevents-container {
+    overflow: hidden;
+}
+
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px 20px;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+.evcard-container {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.evcard-imgcontainer {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-image: url(/img/events/event.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(7.5px);
+    border-radius: 10px;
+    transition: filter .5s ease;
+}
+
+.evcardins-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-image: url(/img/events/event.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: filter .5s ease;
+}
+
+.evcard-container h1 {
+    position: absolute;
+    opacity: 0;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.28px;
+    text-transform: uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease;
+}
+
+.evcard-container:hover .evcard-imgcontainer {
+    filter: none;
+}
+
+.evcard-container:hover .evcardins-container {
+    filter: blur(7.5px);
+}
+
+.evcard-container:hover h1 {
+    opacity: 1;
+}

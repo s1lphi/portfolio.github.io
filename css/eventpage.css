@@ -1,0 +1,166 @@
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.hotevents-container {
+    padding-top: 5px;
+    width: 100%;
+    max-width: 350px;
+    overflow-x: hidden;
+    max-height: 1200px;
+}
+
+.hotevents-inscontainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.evinfo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+    overflow: hidden;
+    padding-top: 0;
+    max-height: 1200px;
+}
+
+.evinfonameofcont {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 25px;
+  }
+
+  .evinfonameofcont::before,
+.evinfonameofcont::after {
+    z-index: 9998;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+}
+
+.evinfonameofcont::before {
+    transform: translate(-50%, -50%);
+}
+
+.evinfonameofcont::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.evinfonameofcont h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-decoration-line: underline;
+}
+
+.insidevinfo-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: fit-content;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.evinfoimage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+  }
+  
+.evinfoimage-container img {
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    border: solid 2px white;
+}
+
+.evmainblock-container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+}
+
+.evpriceinfo-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.evpriceinfo-container h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.evpriceinfo-container button {
+    cursor: pointer;
+    font-family: 'e-Ukraine-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 180, 0.5);
+    width: fit-content;
+    height: 50px;
+    padding: 5px;
+    transition: background-color .5s ease;
+}
+
+.evpriceinfo-container button:hover {
+    background-color: rgb(0, 0, 180);
+}
+
+.evtextinfo-maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.evtextinfo-maincontainer p {
+    margin: 5px 0;
+    color: rgb(223, 223, 223);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: 5.6px;
+  }
+
+.evtextinfo-container p {
+    text-align: justify;
+}

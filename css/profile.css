@@ -1,0 +1,251 @@
+.wrapper {
+    overflow: visible;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+  }
+
+  .profilenicknamecont {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 25px;
+  }
+
+    .profilenicknamecont::before,
+    .profilenicknamecont::after {
+    z-index: 9998;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+}
+
+.profilenicknamecont::before {
+    transform: translate(-50%, -50%);
+}
+
+.profilenicknamecont::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.profilenicknamecont h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-decoration-line: underline;
+}
+
+.insideprofile-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: fit-content;
+}
+
+.profileimage-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: fit-content;
+}
+
+
+
+.imageofprofile {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.imageofprofile img {
+    border-radius: 25px;
+    width: 350px;
+    height: 350px;
+    transition: opacity .5s ease;
+  }
+
+.changeimage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    z-index: 255;
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    transition: opacity .5s ease;
+}
+
+
+.imageofprofile:hover .changeimage-container {
+    opacity: 0.25;
+}
+
+.imageofprofile:hover img {
+    opacity: 0.25;
+}
+
+.profileinfo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+.permissioncontainer {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 25px;
+    padding-right: 0;
+  }
+
+.permissioncontainer span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 6px;
+}
+
+.permissioncontainer::before,
+    .permissioncontainer::after {
+    z-index: 9998;
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+}
+
+.permissioncontainer::before {
+    transform: translate(-50%, -50%);
+}
+
+.permissioncontainer::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.profiletickets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 6px;
+}
+
+.tickets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+}
+
+.profiletickets-container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 6px;
+    text-decoration: underline;
+}
+
+.navticketscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 16px;
+    width: 100px;
+}
+
+.navticketscontainer span {
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 576px) {
+
+.profile-container {
+  justify-content: center;
+}
+
+.insideprofile-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+.profileimage-container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileinfo-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.imageofprofile img {
+  width: 250px;
+  height: 250px;
+}
+
+.changeimage-container {
+  width: 250px;
+  height: 250px;
+  font-size: 16px;
+}
+
+}

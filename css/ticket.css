@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'e-Ukraine-Bold';
+    src: url('/fonts/e-Ukraine-Bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'e-Ukraine-Light';
+    src: url('/fonts/e-Ukraine-Light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'e-Ukraine-Medium';
+    src: url('/fonts/e-Ukraine-Medium.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'e-Ukraine-Regular';
+    src: url('/fonts/e-Ukraine-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'e-Ukraine-Thin';
+    src: url('/fonts/e-Ukraine-Thin.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'e-Ukraine-UltraLight';
+    src: url('/fonts/e-Ukraine-UltraLight.otf') format('opentype');
+  }
+
+  html {
+    font-family: 'e-Ukraine-Regular', sans-serif;
+    background-color: rgb(54, 54, 54);
+  }
+
+
+  body {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .ticket-container {
+    display: flex;
+    width: 650px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+  }
+
+  .leftins-wrapper {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+    width: 450px;
+  }
+
+  .lefttopins {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+  }
+
+  .imgofevtick-container {
+    display: flex;
+    background-image: url(/img/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+  }
+
+  .lefttopins h1 {
+    color: rgba(0, 0, 211, 1);
+    text-transform: uppercase;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+  }
+
+  .leftbotins {
+    display: flex;
+    width: 100%;
+    height: 125px;
+  }
+
+  .leftbotins h2 {
+    text-transform: uppercase;
+    color: rgba(0, 0, 211, 1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+  }
+
+  .left-container, .right-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+
+  .left-container {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .right-container {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .right-container ul {
+    color: rgba(0, 0, 211, 1);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+  }
+
+  .rightins-wrapper {
+    display: flex;
+    border-left: dashed white;
+    height: 100%;
+    width: 200px;
+  }

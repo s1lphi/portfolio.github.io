@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR2109</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/eventpage.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="loginform" class="loginform-container">
+            <form action="/php/login_register.php" method="post">
+                <div class="inp-container">
+                    <span>Логін</span>
+                    <input type="text" name="login" class="loginput" required pattern="[A-Za-z0-9]+">
+                </div>
+                <div class="inp-container">
+                    <span>Пароль</span>
+                    <input type="password" name="password" class="loginput" required>
+                </div>
+                <button type="submit" name="loginbtn" class="logbtn">Вхід</button>
+                <button type="submit" name="regbtn" id="regbtnnav" class="logbtn">Реєстрація</button>
+            </form>
+        </div>
+        <div id="minprof-cont" class="minprofile-container">
+            <div class="balance-container">
+                <div class="coin-container">
+                    <img src="/img/xrcoin.png" alt="">
+                </div>
+                <div class="coincount-container">
+                    <p id="coinbalance">1500</p>
+                </div>
+            </div>
+            <div id="loginbtn-main" class="profilebtn-container">
+                
+            </div>
+        </div>
+        <header>
+            <div class="logo"><img src="/img/logo.svg" alt=""></div>
+            <nav id="navmenu">
+                <ul>
+                    <div id="closeburger" class="close-burger">
+                        <img src="/img/icons/close.svg" alt="">
+                    </div>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/page/events.html">Івенти</a></li>
+                    <li><a href="">Артисти</a></li>
+                    <li><a href="">Чат</a></li>
+                </ul>
+                <!-- <div class="navbtns-cont">
+                    <a href=""><img src="/img/icons/Apple.svg" alt=""></a>
+                    <a href=""><img src="/img/icons/Android.svg" alt=""></a>
+                    <a href=""><img src="/img/icons/Profile.svg" alt=""></a>
+                </div> -->
+                
+            </nav>
+            <div id="burgercont" class="burger-container">
+                <span class="lne"></span>
+                <span class="lne"></span>
+                <span class="lne"></span>
+            </div>
+        </header>
+        <main>
+            <div class="hotevents-container">
+                <div class="animline-container">
+                    <div class="animtext-container">
+                        <img src="/img/icons/line.png" alt="">
+                    </div>
+                    <div class="animtext-container animtext2">
+                        <img src="/img/icons/line.png" alt="">
+                    </div>
+                </div>
+                <div class="hotevents-inscontainer">
+                    <div class="hotevcard-container">
+                        <img src="/img/events/event.png" alt="">
+                    </div>
+                    <div class="hotevcard-container">
+                        <img src="/img/events/event.png" alt="">
+                    </div>
+                    <div class="hotevcard-container">
+                        <img src="/img/events/event.png" alt="">
+                    </div>
+                    <div class="hotevcard-container">
+                        <img src="/img/events/event.png" alt="">
+                    </div>
+                </div>
+                <div class="animline-container">
+                    <div class="animtext-container">
+                        <img src="/img/icons/line.png" alt="">
+                    </div>
+                    <div class="animtext-container animtext2">
+                        <img src="/img/icons/line.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="evinfo-container">
+                <div class="insidevinfo-container">
+                    <div class="evinfoimage-container">
+                        <div class="evinfonameofcont"><h1>esoteric</h1></div>
+                        <div class="evmainblock-container">
+                            <img src="/img/events/event.png" alt="">
+                            <div class="evpriceinfo-container">
+                                <h1>499 uah</h1>
+                                <button id="buybtn2371">купити</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="evtextinfo-maincontainer">
+                        <div class="evtextinfo-container">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium quaerat minima ea dolor facere, alias incidunt odit similique doloribus suscipit nisi, rerum consequuntur ipsam harum quam sed dolore laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+<script src="/js/session.js"></script>
+<script src="/js/ev_upd.js"></script>
+<script src="/js/burgermenu.js"></script>
+<script src="/js/balance.js"></script>
+</html>
