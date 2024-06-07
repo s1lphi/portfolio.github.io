@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Викликаємо AJAX-запит для отримання інформації про користувача
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/php/check_session.php", true);
+    xhr.open("GET", "php/check_session.php", true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var response = JSON.parse(xhr.responseText);
@@ -57,7 +57,7 @@ function uploadProfileImage() {
 
         // Викликаємо AJAX-запит для відправки файлу на сервер
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/php/upload_profile_image.php', true);
+        xhr.open('POST', 'php/upload_profile_image.php', true);
         xhr.onload = function() {
             if (xhr.status === 200) {
                 // Обробляємо відповідь сервера
