@@ -35,7 +35,7 @@ let loginFormOpen = false;
   }
   
   function checkSession() {
-      fetch('/php/check_session.php')
+      fetch('php/check_session.php')
           .then(response => response.json())
           .then(handleSessionStatus)
           .catch(handleSessionError);
@@ -57,7 +57,7 @@ let loginFormOpen = false;
 }
 
 async function checkSession() {
-    const response = await fetch('/php/check_session.php');
+    const response = await fetch('php/check_session.php');
     const data = await response.json();
     handleSessionStatus(data);
 }
@@ -67,7 +67,7 @@ async function checkSession() {
           // Користувач авторизований, оновлюємо кнопку
           logbtnCont.innerHTML = '<p>Мій профіль</p>';
           logbtnCont.addEventListener('click', () =>{
-            window.location.href = "/page/profile.html";
+            window.location.href = "page/profile.html";
           });
           logbtnCont.style.backgroundColor = "";
           loginForm.style.display = "none";
